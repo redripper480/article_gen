@@ -13,8 +13,6 @@ app.use(cors());
 app.use(express.json());
 app.post("/generate_article",async (req,res)=>{
     const prompt  = req.body.prompt;
-    
-    console.log(prompt);
     try {
         const result = await model.generateContent(prompt);
         const article = result.response.text();
