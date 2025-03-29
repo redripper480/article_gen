@@ -517,6 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             if (!response.ok) throw new Error(`API request failed: ${response.status}`);
             const data = await response.json();
+            console.log(data);
             if (!data.choices || !data.choices[0].message) throw new Error('Unexpected API response format');
             const outlineText = data.choices[0].message.content.trim();
             const outline = outlineText.split('\n').map(line => line.trim());
