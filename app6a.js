@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Configuration - Replace with your OpenRouter API key
-    const GEMINI_API_KEY = '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'; // Move to env vars in production
+    const GEMINI_API_KEY = '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'; // Move to env vars in production
     const GEMINI_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
     const MODEL_ID = 'meta-llama/llama-3.1-8b-instruct'; // Example model, adjust as needed
 
